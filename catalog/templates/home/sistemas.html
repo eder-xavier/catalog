@@ -1,0 +1,353 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <title>Catálogo de Sistemas Binários</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="nomeinicial">Catálogo de sistemas binários com candidatos a Exoplanetas</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                <li><a href="{% url 'sistemas' %}" class="nav-link">Sistemas</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        
+        <section class="table-responsive">
+            <h3 class="table-title">Catálogo de Exoplanetas em Sistemas Binários</h3>
+            <table class=".table">
+                <thead>
+                    <tr>
+                        <th>Sistema Estelar</th>
+                        <th>Planeta</th>
+                        <th>Ano de Descoberta</th>
+                        <th>Método de Descoberta</th>
+                        <th>Data de Descoberta do Exoplaneta pela NASA</th>
+                        <th>Massa (MJup)</th>
+                        <th>Massa Sigma (MJup)</th>
+                        <th>Eixo Semi-Maior (UA)</th>
+                        <th>Eixo Semi-Maior Sigma (UA)</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PSR B1620-26</td>
+                        <td>b</td>
+                        <td>1993</td>
+                        <td>Tempo de pulso</td>
+                        <td>Julho de 2003</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>23</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>HD 202206</td>
+                        <td>c</td>
+                        <td>2005</td>
+                        <td>Velocidade radial</td>
+                        <td>Setembro de 2005</td>
+                        <td>2,179</td>
+                        <td></td>
+                        <td>2,4832</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>DP Leonis</td>
+                        <td>b</td>
+                        <td>2010</td>
+                        <td>Tempo de eclipse de binárias</td>
+                        <td>Janeiro de 2010</td>
+                        <td>6,05</td>
+                        <td>0,47</td>
+                        <td>8,19</td>
+                        <td>0,39</td>
+                    </tr>
+                    <tr>
+                        <td>NN Serpentis</td>
+                        <td>c</td>
+                        <td>2010</td>
+                        <td>Tempo de eclipse de binárias</td>
+                        <td>Outubro de 2010</td>
+                        <td>6,91</td>
+                        <td>0,54</td>
+                        <td>5,38</td>
+                        <td>0,2</td>
+                    </tr>
+                    <tr>
+                        <td>NN Serpentis</td>
+                        <td>b</td>
+                        <td>2010</td>
+                        <td>Tempo de eclipse de binárias</td>
+                        <td>Outubro de 2010</td>
+                        <td>2,28</td>
+                        <td>0,38</td>
+                        <td>3,39</td>
+                        <td>0,1</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-16</td>
+                        <td>b</td>
+                        <td>2011</td>
+                        <td>Trânsito</td>
+                        <td>Setembro de 2011</td>
+                        <td>0,333</td>
+                        <td>0,016</td>
+                        <td>0,7048</td>
+                        <td>0,0011</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-34</td>
+                        <td>b</td>
+                        <td>2012</td>
+                        <td>Trânsito</td>
+                        <td>Janeiro de 2012</td>
+                        <td>0,22</td>
+                        <td>0,0011</td>
+                        <td>1,0896</td>
+                        <td>0,0009</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-35</td>
+                        <td>b</td>
+                        <td>2012</td>
+                        <td>Trânsito</td>
+                        <td>Janeiro de 2012</td>
+                        <td>0,127</td>
+                        <td>0,02</td>
+                        <td>0,603</td>
+                        <td>0,001</td>
+                    </tr>
+                    <tr>
+                        <td>NY Virginis</td>
+                        <td>b</td>
+                        <td>2012</td>
+                        <td>Tempo de eclipse de binárias</td>
+                        <td>Fevereiro de 2012</td>
+                        <td>2,85</td>
+                        <td></td>
+                        <td>3,457</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>RR Caeli</td>
+                        <td>b</td>
+                        <td>2012</td>
+                        <td>Tempo de eclipse de binárias</td>
+                        <td>Maio de 2012</td>
+                        <td>4,2</td>
+                        <td>0,4</td>
+                        <td>5,3</td>
+                        <td>0,6</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-38</td>
+                        <td>b</td>
+                        <td>2012</td>
+                        <td>Trânsito</td>
+                        <td>Outubro de 2012</td>
+                        <td>0,384</td>
+                        <td>0,0192</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-47</td>
+                        <td>b</td>
+                        <td>2012</td>
+                        <td>Trânsito</td>
+                        <td>Setembro de 2012</td>
+                        <td>0,027</td>
+                        <td>0,005</td>
+                        <td>0,2956</td>
+                        <td>0,0047</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-47</td>
+                        <td>c</td>
+                        <td>2012</td>
+                        <td>Trânsito</td>
+                        <td>Setembro de 2012</td>
+                        <td>0,07</td>
+                        <td>0,061</td>
+                        <td>0,989</td>
+                        <td>0,016</td>
+                    </tr>
+                    <tr>
+                        <td>PH1</td>
+                        <td>b</td>
+                        <td>2013</td>
+                        <td>Trânsito</td>
+                        <td>Maio de 2013</td>
+                        <td>0,532</td>
+                        <td></td>
+                        <td>0,634</td>
+                        <td>0,011</td>
+                    </tr>
+                    <tr>
+                        <td>FW Tau AB</td>
+                        <td>b</td>
+                        <td>2014</td>
+                        <td>Imagem</td>
+                        <td>Janeiro de 2014</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>330</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>ROXs 42B</td>
+                        <td>b</td>
+                        <td>2014</td>
+                        <td>Imagem</td>
+                        <td>Janeiro de 2014</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>140</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>HD 106906</td>
+                        <td>b</td>
+                        <td>2014</td>
+                        <td>Imagem</td>
+                        <td>Janeiro de 2014</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>732</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-413</td>
+                        <td>b</td>
+                        <td>2014</td>
+                        <td>Trânsito</td>
+                        <td>Março de 2014</td>
+                        <td>0,21</td>
+                        <td>0,07</td>
+                        <td>0,3553</td>
+                        <td>0,0019</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-453</td>
+                        <td>b</td>
+                        <td>2014</td>
+                        <td>Trânsito</td>
+                        <td>Setembro de 2014</td>
+                        <td>0,05</td>
+                        <td></td>
+                        <td>0,7903</td>
+                        <td>0,0028</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler-1647</td>
+                        <td>b</td>
+                        <td>2016</td>
+                        <td>Trânsito</td>
+                        <td>ainda não publicado</td>
+                        <td>1,52</td>
+                        <td>0,65</td>
+                        <td>2,7205</td>
+                        <td>0,007</td>
+                    </tr>
+                    <tr>
+                        <td>OGLE-2007-BLG-349</td>
+                        <td>b</td>
+                        <td>2016</td>
+                        <td>Microlente</td>
+                        <td>Publicado</td>
+                        <td>0,25</td>
+                        <td>0,041</td>
+                        <td>2,59</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MXB 1658-298</td>
+                        <td></td>
+                        <td>2017</td>
+                        <td>Atraso periódico em eclipses de raios X</td>
+                        <td>Publicado</td>
+                        <td>23,5</td>
+                        <td>3</td>
+                        <td>1,6</td>
+                        <td>0,1</td>
+                    </tr>
+                    <tr>
+                        <td>KIC 5095269</td>
+                        <td>b</td>
+                        <td>2017</td>
+                        <td>Tempo de eclipse de binárias</td>
+                        <td>Publicado</td>
+                        <td>7,7</td>
+                        <td>0,08</td>
+                        <td>0,8</td>
+                        <td>0,005</td>
+                    </tr>
+            </table>
+        </section>
+
+        <section class="container">
+            <article class="content">
+        
+                <h2>Explorando Exoplanetas em Sistemas Binários: Um Olhar Detalhado através do Catálogo</h2>
+                <article class="art">
+                    <p class="textos">
+                        O catálogo de sistemas binários com candidatos a exoplanetas desempenha um papel crucial
+                        na nossa busca por compreender os mistérios do universo. Cada entrada neste catálogo é
+                        mais do que apenas uma linha de dados; representa uma janela para um mundo fascinante de
+                        possibilidades e descobertas.
+                    </p>
+                    <p class="textos">
+                        Cada "Sistema Estelar" listado é um sistema binário estelar, composto por duas estrelas
+                        orbitando uma a outra, formando uma dança gravitacional complexa. A presença de um "Planeta"
+                        - ou exoplaneta - em um desses sistemas é uma revelação notável, pois é uma evidência da
+                        possibilidade de existência de vida além do nosso sistema solar.
+                    </p>
+                    <p class="textos">
+                        O "Método de Descoberta" descreve a técnica utilizada para identificar e confirmar a presença
+                        desses exoplanetas. Desde "Tempo de Pulsar" até "Velocidade Radial" e "Trânsito", cada método 
+                        tem suas próprias vantagens e desafios, oferecendo vislumbres únicos desses mundos distantes.
+                    </p>
+                    <p class="textos">
+                        O "Ano de Descoberta" marca o ano em que esse exoplaneta foi inicialmente identificado, um lembrete
+                        do progresso constante da ciência e da tecnologia. Além disso, a "Data de Descoberta de Exoplanetas
+                        da NASA" destaca o momento em que a NASA oficialmente anunciou a descoberta, marcando um marco importante 
+                        na história da exploração espacial.
+                    </p>
+                    <p class="textos">
+                        As colunas relacionadas à "Massa (MJup)" e "Eixo Semimaior (UA)" oferecem insights sobre a massa do
+                        planeta e sua distância média em relação à sua estrela hospedeira, respectivamente. Esses números podem
+                        nos dar pistas sobre as características físicas e ambientais desses exoplanetas, e como eles se comparam
+                        aos planetas do nosso próprio sistema solar.
+                    </p>
+                    <p class="textos">
+                        Cada "Incerteza na Massa (MJup)" e "Incerteza no Eixo Semimaior (UA)" acompanha a imprecisão nas medições,
+                        lembrando-nos da complexidade das medições astronômicas e das nuances que os pesquisadores precisam levar
+                        em consideração.
+                    </p>
+                    <p class="textos">
+                        O catálogo é mais do que uma compilação de números; é um tesouro de informações que nos ajuda a decifrar
+                        a vastidão do cosmos. Ele nos permite entender como os exoplanetas se formam e evoluem em sistemas binários,
+                        fornecendo peças vitais para o quebra-cabeça da vida fora do nosso planeta. Cada entrada nos aproxima um pouco
+                        mais de compreender as maravilhas do universo e nosso lugar nele.
+                    </p>
+                </article>
+                
+            </article>
+        
+        </section>
+    </main>
+
+    <footer>
+        <section id="rodape"><NAME>Por Éder Xavier - Natal / RN - Brasil</section>
+    </footer>
+</body>
+</html>

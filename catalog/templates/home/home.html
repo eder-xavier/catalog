@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <title>Catálogo de Sistemas Binários</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="nomeinicial">Catálogo de sistemas binários com candidatos a Exoplanetas</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                <li><a href="{% url 'sistemas' %}" class="nav-link">Sistemas</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="container">
+            <article class="content">
+        
+        
+                <article class="art">
+                    <p class="textos">Bem-vindo ao Catálogo de Sistemas Binários Estelares.
+                    Este é um espaço dedicado à exploração e análise de sistemas binários
+                    no universo. Navegue pelos dados e informações sobre estrelas que
+                    orbitam uma à outra, formando sistemas fascinantes que podem nos
+                    revelar segredos sobre a formação e evolução das estrelas.</p>
+                </article>
+                <article class="gif-container">
+                    <img src="{% static 'img/espaco2.gif' %}" alt="GIF do Espaço">
+                    <p class="legendas">Pode não parecer. Mas esta galáxia abriga bilhões de sistemas binários</p>
+                </article>
+        
+            </article>
+        
+        </section>
+        <section class="container">
+            <article class="title">
+                <h2>Exoplaneta confirmado no sistema KIC10544976</h2>
+                <article class="art">
+                    <p class="textos"> Ao longo do ano de 2023, pesquisadores da Escola de Ciência
+                        e Tecnologia da Universidade Federal do Rio Grande do Norte (UFRN) conduziram
+                        uma minuciosa análise do sistema estelar KIC10544976. Este sistema é composto
+                        por uma anã branca e uma anã vermelha, que orbitam uma à outra em uma órbita
+                        notavelmente compacta, com um período orbital de aproximadamente 8 horas.
+                    </p>
+                    <p class="textos"> Para realizar esta análise, adotou-se um método de detecção de
+                        exoplanetas conhecido como "variação nos instantes do eclipse". Esse método consiste
+                        em observar as sutis variações no período orbital da estrela primária quando ela passa
+                        em frente à estrela secundária. Com base em informações já presentes na literatura científica,
+                        esse sistema já havia exibido variações em seu período orbital anteriormente. Entretanto,
+                        tal oscilação pode ter diversas origens possíveis.
+                    </p>
+                    <p class="textos"> Diante dessas perspectivas, dois cenários foram considerados para explicar
+                        esse comportamento.O primeiro cenário envolve o efeito tempo-luz (ETL), um fenômeno periódico
+                        desencadeado pela interação gravitacional entre os corpos circumbinários e a binária interna.
+                        O segundo cenário diz respeito ao movimento apsidal, que se manifesta
+                        por meio da rotação da linha apsidal devido a interações de maré em binários próximos. 
+                        Esse fenômeno é particularmente perceptível quando a excentricidade orbital do binário não é nula.
+                    </p>
+                    <p class="textos">
+                        Após a formulação de uma modelagem computacional, que incorporou uma efeméride linear
+                        e um dos efeitos propostos, procedeu-se a um ajuste estatístico rigoroso a fim de determinar
+                        se o sistema realmente abrigava um exoplaneta. Como revelado na figura a seguir, a melhor explicação
+                        para a variação observada foi o efeito tempo-luz, confirmando a presença do candidato a exoplaneta
+                        orbitando o sistema estelar KIC10544976. Esse resultado reforça o papel crucial das análises detalhadas
+                        na busca por compreender a complexidade e a diversidade dos sistemas estelares.
+                    </p>
+                </article>
+
+                <article class="gif-container">
+                    <img src="{% static 'img/combi2.png' %}" alt="GIF do Espaço">
+                    <p class="legendas">Comparação dos resultados do ETL + movimento apsidal</p>
+                </article>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section id="rodape"><NAME>Por Éder Xavier - Natal / RN - Brasil</section>
+    </footer>
+</body>
+</html>
