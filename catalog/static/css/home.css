@@ -143,9 +143,6 @@ footer{
     }
 
 }
-.table-responsive {
-    overflow-x: auto;
-}
 .data-table {
     width: 100%;
     border-collapse: collapse;
